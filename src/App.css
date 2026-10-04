@@ -587,14 +587,22 @@
 
   border-radius: 8px;
 
-  background: #2563eb;
+  /* background: #2563eb; */
+  background: linear-gradient(
+    90deg,
+    #6366f1 0%,
+    #a855f7 100%
+  );
+  transition:
+    opacity 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
   color: white;
 
   text-decoration: none;
 
   font-weight: 600;
 
-  transition: 0.3s;
+  /* transition: 0.3s; */
 }
 
 .contact-links a:hover {
