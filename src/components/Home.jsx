@@ -27,8 +27,8 @@ function Home() {
           </a>
 
         <a
-          href="/KAUSHALYA KUMARI (1).pdf"
-          download="KAUSHALYA KUMARI(1).pdf"
+          href="/KaushalyaKumariCv.pdf"
+          download="Kaushalya CV.pdf"
           className="secondary-button"
         >
           Download CV
