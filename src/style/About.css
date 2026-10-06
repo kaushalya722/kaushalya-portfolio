@@ -58,10 +58,8 @@
 .about-content {
   display: flex;
   gap: 50px;
-
   max-width: 1100px;
   width: 100%;
-
   margin: 0 auto 60px;
 }
 
@@ -72,15 +70,14 @@
 
 .about-content .me-card {
   flex: 1;
-
   display: flex;
   justify-content: center;
 }
 
 .me-card img {
   width: 100%;
-  max-width: 370px;
-  height: 410px;
+  max-width: 230px;
+  height: 260px;
 
   object-fit: cover;
 
