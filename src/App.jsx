@@ -6,11 +6,12 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Projects from './components/Project';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
-    <>
+    <div className='whole'>
       <Navbar/>
 
       <main>
@@ -36,9 +37,9 @@ function App() {
       </main>
 
       <footer>
-        <p>© 2026 Kaushalya. All rights reserved.</p>
+        <Footer/>
       </footer>
-    </>
+    </div>
   );
 }
 

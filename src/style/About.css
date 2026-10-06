@@ -1,0 +1,527 @@
+
+/* --------------------------------------------------About--------------------------------------------- */
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+  /* background: black; */
+    background: linear-gradient(
+    135deg,
+    #02081e 0%,
+    #0b1235 45%,
+    #171044 75%,
+    #24104a 100%
+  );
+}
+
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+.section {
+  min-height: 80vh;
+  padding: 100px 10%;
+  scroll-margin-top: 70px;
+   /* border: 1px solid #616874; */
+  border-bottom: 0.3px solid #393e47;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title p {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.section-title h2 {
+  font-size: 42px;
+  color: #f8fafc;
+  margin-top: 8px;
+}
+
+
+/* =========================
+   ABOUT CONTENT
+========================= */
+
+.about-content {
+  display: flex;
+  gap: 50px;
+
+  max-width: 1100px;
+  width: 100%;
+
+  margin: 0 auto 60px;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.about-content .me-card {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+}
+
+.me-card img {
+  width: 100%;
+  max-width: 370px;
+  height: 410px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  display: block;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.about-content .details-card {
+  flex: 2;
+}
+
+.about-content h3 {
+  font-size: 26px;
+
+  color: #2563eb;
+
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  color: #6b7280;
+
+  line-height: 1.8;
+
+  margin-bottom: 18px;
+}
+
+
+/* =========================
+   LANGUAGE
+========================= */
+
+.section .lan-topic {
+  color: #2563eb;
+
+  font-weight: 600;
+
+  margin-bottom: 15px;
+}
+
+.details-card .language {
+  width: 100%;
+
+  min-height: 80px;
+
+  display: flex;
+
+  gap: 20px;
+}
+
+.language .sinhala,
+.language .english {
+  flex: 1;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  text-align: center;
+
+  border-radius: 15px;
+
+  min-height: 80px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.sinhala .sub,
+.english .sub {
+  color: #f8fafc;
+
+  line-height: 1.2;
+
+  margin: 0 0 8px;
+}
+
+.sinhala .sub-1,
+.english .sub-1 {
+  font-size: 12.5px;
+
+  color: #6b7280;
+
+  margin: 0;
+}
+
+
+/* =========================
+   SOFT SKILLS + EDUCATION
+========================= */
+
+.soft-skills {
+  display: flex;
+
+  gap: 50px;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+.about-card,
+.about-card-1 {
+  flex: 1;
+
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  color: #f8fafc;
+
+  border-radius: 15px;
+
+  height: fit-content;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.degree-details {
+  border: 1px solid #6b7280;
+
+  border-radius: 15px;
+
+  padding: 20px;
+
+  margin-top: 20px;
+}
+
+.about-card h4 {
+  color: #f8fafc;
+
+  margin-bottom: 10px;
+
+  line-height: 1.5;
+}
+
+.about-card .location {
+  color: #2563eb;
+
+  font-size: 13px;
+}
+
+.about-card .end {
+  font-size: 12px;
+
+  color: #6b7280;
+}
+
+
+/* =========================
+   SOFT SKILLS
+========================= */
+
+.column {
+  display: flex;
+
+  gap: 20px;
+}
+
+.column .column-one,
+.column .column-two {
+  flex: 1;
+}
+
+.about-card-1 .one {
+  border: 1px solid #6b7280;
+
+  margin-top: 15px;
+
+  padding: 10px;
+
+  border-radius: 15px;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.about-card-1 span {
+  color: #22c55e;
+
+  margin-right: 10px;
+
+  display: inline-flex;
+
+  vertical-align: middle;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .section {
+    padding: 90px 7%;
+  }
+
+  .about-content {
+    gap: 25px;
+  }
+
+  .me-card img {
+    max-width: 320px;
+
+    height: 380px;
+  }
+
+  .about-content h3 {
+    font-size: 24px;
+  }
+
+  .soft-skills {
+    gap: 25px;
+  }
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .section {
+    padding: 80px 6%;
+  }
+
+  .section-title {
+    margin-bottom: 45px;
+  }
+
+  .section-title h2 {
+    font-size: 36px;
+  }
+
+
+  /* About image + details become vertical */
+
+  .about-content {
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 35px;
+  }
+
+
+  .about-content .me-card {
+    width: 100%;
+  }
+
+  .me-card img {
+    width: 100%;
+
+    max-width: 350px;
+
+    height: 400px;
+  }
+
+
+  .about-content .details-card {
+    width: 100%;
+  }
+
+
+  /* Soft skills + education become vertical */
+
+  .soft-skills {
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .about-card,
+  .about-card-1 {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .section {
+    padding: 70px 5%;
+  }
+
+
+  /* Section title */
+
+  .section-title {
+    margin-bottom: 35px;
+  }
+
+  .section-title p {
+    font-size: 14px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+
+  /* Profile image */
+
+  .me-card img {
+    width: 100%;
+
+    max-width: 320px;
+
+    height: 350px;
+  }
+
+
+  /* About heading */
+
+  .about-content h3 {
+    font-size: 22px;
+
+    margin-bottom: 15px;
+  }
+
+
+  /* About paragraphs */
+
+  .about-content p {
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+  }
+
+
+  /* Languages */
+
+  .details-card .language {
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .language .sinhala,
+  .language .english {
+    width: 100%;
+
+    min-height: 75px;
+  }
+
+
+  /* Cards */
+
+  .about-card,
+  .about-card-1 {
+    padding: 22px;
+  }
+
+
+  /* Soft skills */
+
+  .column {
+    flex-direction: column;
+
+    gap: 0;
+  }
+
+  .column .column-one,
+  .column .column-two {
+    width: 100%;
+  }
+
+
+  /* Education */
+
+  .degree-details {
+    padding: 17px;
+  }
+
+  .about-card h4 {
+    font-size: 15px;
+  }
+
+  .about-card .location {
+    font-size: 12px;
+  }
+
+  .about-card .end {
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .section {
+    padding: 60px 5%;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .me-card img {
+    max-width: 280px;
+
+    height: 320px;
+  }
+
+  .about-content h3 {
+    font-size: 20px;
+  }
+
+  .about-card,
+  .about-card-1 {
+    padding: 18px;
+  }
+
+  .about-card-1 .one {
+    font-size: 12px;
+
+    padding: 9px;
+  }
+}

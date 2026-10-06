@@ -1,11 +1,10 @@
 import React from 'react'
 
-// import "./Contact.css";
-
+import '../style/Contact.css'
 function Contact() {
   return (
     <>
-    <div className="section contact">
+    <div className="section contact" id='contact' data-section>
       <div className="section-title">
         <p>Let's Connect</p>
         <h2>Contact Me</h2>

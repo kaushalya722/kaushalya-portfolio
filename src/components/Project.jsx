@@ -1,12 +1,11 @@
 import React from 'react'
 
 import projects from "../data/Project"
-// import "./Projects.css";
-
+import '../style/Project.css'
 function Projects() {
   return (
     <>
-    <div className="section projects">
+    <div className="section projects" id='projects' data-section>
       <div className="section-title">
         <p>What I've Built</p>
         <h2>My Projects</h2>
