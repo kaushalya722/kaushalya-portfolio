@@ -2,6 +2,8 @@ import React from 'react'
 
 import projects from "../data/Project"
 import '../style/Project.css'
+import { motion } from "motion/react";
+
 function Projects() {
   return (
     <>
@@ -13,7 +15,13 @@ function Projects() {
 
       <div className="projects-grid">
         {projects.map((project) => (
-          <div className="project-card" key={project.title}>
+          
+          <motion.div className="project-card" key={project.title} 
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          >
             <div className="project-image">
               <img src={project.image} alt="" />
             </div>
@@ -53,7 +61,8 @@ function Projects() {
 
               </div>
             </div>
-          </div>
+           
+          </motion.div>
         ))}
       </div>
     </div>

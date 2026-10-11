@@ -395,6 +395,37 @@
     font-size: 15px;
   }
 }
+/* --------------------------------------------------------------------------------------------------------- */
+/* Initial positions */
+.home-content,
+.home-image {
+  opacity: 0;
+}
 
+/* Left content enters from the left */
+.home-content.slide-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .home-content.slide-left{
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
 
 

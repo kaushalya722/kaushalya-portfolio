@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'motion/react';
 
 import '../style/Contact.css'
 function Contact() {
@@ -16,7 +17,11 @@ function Contact() {
           opportunities and would be happy to connect.
         </p>
 
-        <div className="contact-links">
+        <motion.div className="contact-links" 
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 1, ease: "easeOut" }}>
           <a href="mailto:kkaushalya722@gmail.com">
             Email
           </a>
@@ -36,7 +41,7 @@ function Contact() {
           {/* <a href="#" target="_blank" rel="noreferrer">
             Behance
           </a> */}
-        </div>
+        </motion.div>
       </div>
     </div>
     </>

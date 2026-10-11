@@ -18,6 +18,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaDocker } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
+import { motion } from "motion/react";
 
 function Skills() {
 
@@ -141,7 +142,11 @@ const skillGroups = [
 
         {skillGroups.map((group) => (
 
-          <div className="skill-group" key={group.title}>
+          <motion.div className="skill-group" key={group.title} 
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.1 }}
+          transition={{ duration: 1, ease: "easeOut" }}>
 
             {/* Category title */}
             <h3 className="skill-group-title">
@@ -173,7 +178,7 @@ const skillGroups = [
 
             </div>
 
-          </div>
+          </motion.div>
 
         ))}
 
